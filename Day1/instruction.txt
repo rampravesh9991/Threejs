@@ -1,0 +1,66 @@
+1. go to thee js website -> download // it will download zip file
+2. extract zip -> go to build folder -> copy three.min [into your folder]
+3. in index.html file, the three.min.js script should get loaded before script .js
+
+*********************    2    ************************
+
+//let's start creating our first scene
+---------4 Element to get started-------------
+A scene that will contain objects
+some objects
+A camera 
+A renderer
+
+SCENE : like a container
+we put objects, models, lights etc in it 
+At some point we ask threejs to render that scene
+
+OBJECTS : can be many things
+primitive geometrices
+imported models 
+particles 
+lights etc
+
+start with a simple red cube
+-------------------------------------------------
+we need to create Mesh
+Combination of geometry (the shape) and a material (how it looks);
+Start with a BoxGeometry and a MeshBasicMaterial
+
+CAMERA : Not Visible
+Serve as a point of view when doing a render
+Can have a multiple and switch between them
+Different types 
+We are going to use PerspectiveCamera
+
+THE FIELD OF VIEW : verticle vision angle, in degrees, also called fov [field of view]
+//if camera has bigger vision then focusing it will cause getting a view like shape is misshaped
+let's try 75 degree [it's still a lot]
+
+THE ASPECT RATIO : the width of the render divided by the height of the render,
+we don't have the render yet, but we can decide on the size now
+create size object containing temporary values
+think of it like a viewport - mobile screen, tablet, monitor
+
+RENDERER : render the scene from camera point of view
+Result drawn into a canvas
+A canvas is a html element in which you can draw stuff
+three.js will use WebGL to draw the render inside the canvas
+you can create it or you can let three.js to do it
+
+create the <canvas> element before you load the scripts with a webgl class 
+use the setSize() method to update the size of the renderer
+
+FIRST RENDERER : call the renderer() method on the renderer with scene and the camera as parameters
+//nothing visible because the camera is inside the cube, we need to move the camera backward
+
+to transform an object, we can use the following properties
+-position
+-rotation
+-scale
+
+POSITION : is also an object with x,y and z properties 
+Three.js considers the forward / backward axis to be z
+
+************ CONGRATULATIONS **********
+Your cube is visible - even if it looks more like a square

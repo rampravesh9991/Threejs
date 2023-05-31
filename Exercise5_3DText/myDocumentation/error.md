@@ -1,0 +1,2 @@
+* Error1 : I added point light in the scene but i still cannot see the object, so i added ambient light than i can see the object
+* Error2 : I forgot to set position of the camera and i was stuck for a while
