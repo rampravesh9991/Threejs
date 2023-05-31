@@ -1,0 +1,26 @@
+What is markdown?
+- lightweight makrup language with a plain text formatting style
+- can be converted into HTML / XHTML and other formats
+- it's main purpose is readibility and ease of use
+
+What is it used for?
+- readme files (github, etc)
+- fourm and blog posts 
+- used in many static site genetators
+
+Some things you can format
+- heading
+- block of code 
+- lists
+- images
+- emphasis 
+- blockquotes
+- links
+- horizontal rules
+
+Markdown editors
+- text editor extensions (VS code, atom ,etc)
+- Markpad
+- Haroopad
+- MarkdownPad 2
+- Typora
