@@ -33,3 +33,26 @@
 * we are going to animate the spheres and turn them blue when they intersect with them
 * now lets update the raycaster in the tick function
 * update the material of the object property for each item of the **intersects** array
+* issue : they all go blue but never red because all the objects intersects at start
+* turn all the objects red before turning the onces that intersect blue
+
+### use the raycaster with the mouse
+* we can use the raycaster to test if an object is behind the mouse 
+* Three.js will do all the heavy lifting
+
+### hovering
+* we need the coordinates of the mouse but not in pixels
+* we need a value that goes from -1 to +1 in horizontal and verticla axis
+* create a mouse variable with **Vector2** and update it when the mouse is moving
+* use the **setFromCamera()** method to orient the ray in the right direction, the rest is the same
+
+### mouse enter and mouse leave events
+* mouse evnets like **mouseenter** and **mouseleave** etc. aren't supported
+* create a witness variable containing the currently hovered object
+* if an object intersects, but there wasn't one before, a **mouseenter** happened
+* if no objects intersects, but there was one before, a mouse leave happened
+
+### mouse click event
+* we can test what object is being clicked
+
+> using the raycaster can be hard but once you understand how to shoot a ray properly and how to handle the result, you can do a lot
