@@ -16,4 +16,4 @@
  * comment multiple lines : Ctrl + l {highlight lines} -> Ctrl + / {comment all selected lines}
  * Opening terminal : Ctrl + ` : you can also rename the terminals
    * Ctrl + k {clear terminal}
-   * History : arrow keys 
+   * History : arrow keys   
