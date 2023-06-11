@@ -245,3 +245,14 @@ positions[i3 + 2] = Math.sin(branchAngle);
   * multiply the spin angle by the spin parameter
 * **Randomness**
   * create a **randomness** parameter
+  * we want the particles to spread more on the outside
+  * create a random value for each axis and multiply it by the radius and randomness parameters then apply them to the position
+  * we want less randomness on the inside and more on the outside
+  * apply the power with **Math.Pow()** and multiply it by -1 randomly to have negative values
+* **Colors**
+  * we want color for the inner particles and outer particles
+  * create a **insideColor** and **outsideColor** parameter
+  * Activate the **vertexColor** on the material
+* **Go further**
+  * you can try to add more tweaks, tests other galaxy shapes, use a texture for the particles, rotate the galaxy, create multiple galaxies etc.
+  * we will learn how to animate all the particles saperately in a future lesson 
